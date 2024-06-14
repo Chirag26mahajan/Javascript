@@ -22,11 +22,13 @@
 // example1();
 
 //-----------------DIfference for let-------------------
-function example2(){
-    if(true){
-        let x = 19;
-    }
-    console.log(x);
-}
+// function example2(){
+//     if(true){
+//         let x = 19;
+//     }
+//     console.log(x);
+// }
 
-example2();
+// example2();
+
+//-------------------------------
