@@ -15,3 +15,4 @@ let num1 = 1;
 let str = "1";
 
 console.log(num1===str);
+console.log(num1==str);
