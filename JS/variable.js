@@ -13,13 +13,13 @@
 
 //Difference between var and let
 // ----------------------difference for var-----------------
-// function example1(){
-//    if(true){
-//     var x = 10;
-//    }
-//    console.log(x);
-// }
-// example1();
+function example1(){
+   if(true){
+    var x = 10;
+   }
+   console.log(x);
+}
+example1();
 
 //-----------------DIfference for let-------------------
 // function example2(){
