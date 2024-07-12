@@ -25,7 +25,7 @@ let valueInNum = Number(score) //used to convert into number(integer)
 
 const id = Symbol("123");
 const newId = Symbol("123");
-// console.log(id==newId);
+console.log(id==newId);
 const bigNumber = 23949384384439484n;  //n lagaane se automatically ye bigInt ban gaya hai
 // console.log(typeof bigNumber);
 
