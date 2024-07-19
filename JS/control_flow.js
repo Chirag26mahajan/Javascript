@@ -10,10 +10,11 @@ let val1;
 
 // console.log(val1);
 
-let myArray  = ["spiderman","batman","superman"];
+// let myArray  = ["spiderman","batman","superman"];
+// let arr = 0;
+// while(arr<myArray.length){
+//     console.log(`Value is ${myArray[arr]}`);
+//     arr++;
+// }
 
-let arr = 0;
-while(arr<myArray.length){
-    console.log(`Value is ${myArray[arr]}`);
-    arr++;
-}
+ 
