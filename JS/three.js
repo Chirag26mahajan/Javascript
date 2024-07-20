@@ -11,3 +11,19 @@ for (const greet of greeting) {
 }
 
 //Maps
+const map  = new Map();
+map.set("IN","India")
+map.set("US","United States")
+console.log(map.get("IN"));
+// console.log(map);
+// for (const key of map) {   
+//     console.log(key);
+// }
+
+// output will be 
+// [ 'IN', 'India' ]
+// [ 'US', 'United States' ]
+
+// for (const [key,value] of map) {
+//     console.log(key,value);
+// }
