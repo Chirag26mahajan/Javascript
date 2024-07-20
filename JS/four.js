@@ -15,9 +15,12 @@ const obj = {
     html:"web"
 };
 
-for (const key in obj) {
-    console.log(`${key} is shortcut for the word: ${obj[key]}`);
+for (const key of Object.keys(obj)) {
+    console.log(`${key} --> ${obj[key]}`);
 }
+// for (const key in obj) {
+//     console.log(`${key} is shortcut for the word: ${obj[key]}`);
+// }
 
 
 // const name = setTimeout(function add(){
