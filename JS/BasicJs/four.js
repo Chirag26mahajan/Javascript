@@ -23,8 +23,9 @@ for (const key of Object.keys(obj)) {
 // }
 
 
-// const name = setTimeout(function add(){
-//     console.log("added");
-// },2000);
-// clearTimeout(name);
-// console.log(name);   timeout id to ayegi but added print ni hoga
+const name = setTimeout(function add(){
+    console.log("added");
+},2000);
+ 
+clearTimeout(name);
+// console.log(name);   timeout id to ayegi but added print ni hoga clearTimeout karne ke bad 
