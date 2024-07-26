@@ -27,5 +27,21 @@
         document.querySelector('.language').appendChild(li)
     }
     addOptLanguage('goLang')
+
+
+    //Edit javascript
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo";  Not that much optimised
+    const newLi = document.createElement('li')
+    newLi.textContent ="Mojo"
+    secondLang.replaceWith(newLi);
+
+    //Edit
+    const firstLang = document.querySelector("li:nth-child(1)") //first-child
+    firstLang.outerHTML ='<li>Ruby</li>'
+
+    //remove
+    const lastLang =  document.querySelector("li:last-child")
+    lastLang.remove()
 </script>
 </html>
