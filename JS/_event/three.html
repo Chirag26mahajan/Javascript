@@ -8,17 +8,24 @@
 <body>
     
     <h1>Chirag</h1>
-    <button id="start">Start</button>
+    <button id="start">Start</butto>
+    <p id="para"></P>
     <button id="stop">Stop</button>
     
 </body>
 <script>
-    const setDate = function(str){
-        // console.log( `${str}`);
-        console.log(str,Date.now())
-    }
-   const intervalID =  setInterval(setDate,1000,"hi")
-   clearInterval(intervalID)
+//     const setDate = function(str){
+//         // console.log( `${str}`);
+//         console.log(str,Date.now())
+//     }
+//    const intervalID =  setInterval(setDate,1000,"hi")
+//    clearInterval(intervalID)
+
+const bt = document.querySelector("#start").addEventListener('click',function(e){
+    
+    console.log("clicked")
+    // setTimeout(bt,1000);
+})
 
 </script>
 </html>
