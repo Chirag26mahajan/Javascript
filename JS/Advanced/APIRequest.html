@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRequest</title>
+</head>
+<style>
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 300px;
+        text-align: center;
+        margin: 20px auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    .card h2 {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+    .card p {
+        font-size: 18px;
+        color: #666;
+    }
+</style>
+<body>
+    
+    <!-- 0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete. -->
+
+<div class="card" id="user-card"></div>
+
+</body>
+<script>
+    // const reqURL = 'https://api.github.com/users/Chirag26mahajan'
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('GET',reqURL);
+    // xhr.onreadystatechange = function(){
+    //     console.log(xhr.readyState);
+    // if(xhr.readyState ===4){
+    //     const data  = JSON.parse(this.responseText);
+    //     console.log(data.followers)
+    // }
+    // } //to keep a track
+    //  xhr.send()
+
+     //Card Assignment
+     const reqURL = 'https://api.github.com/users/Chirag26mahajan';
+     const xhr = new XMLHttpRequest();
+     xhr.open('GET',reqURL);
+     xhr.onreadystatechange = function(){
+        if(xhr.readyState===4 && xhr.status===200){
+            const data = JSON.parse(this.responseText);
+            const card = document.querySelector("#user-card");
+
+            card.innerHTML = `
+            <img src ="${data.avatar_url}" alt="User Avatar">
+            <h2>${data.login}</h2>
+            <p>Followers: ${data.followers}</p>`
+        }
+     }
+     xhr.send()
+
+</script>
+</html>
