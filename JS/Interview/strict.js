@@ -19,4 +19,4 @@ function sum(num1,num2){
     num2 = 200;
     return arguments[0]+arguments[1];
 }
-sum(10,10)
+sum(10,10) //20

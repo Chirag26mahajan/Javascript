@@ -21,9 +21,21 @@ Array.prototype.heyChirag = function(){
     
 }
 
+// String.prototype.newWord = function(){
+//     console.log(`New String `);
+    
+// }
+//It won't for strings like this because Strings in js are primitive values 
+//not objectsHowever, when you call a method on a string, 
+// JavaScript automatically wraps the string in a temporary
+//  String object, allowing you to use properties 
+// and methods defined on String.prototype
+
+
 //Be it function, array or strings everything goes through object and there is no super protoype of object 
 // heroPower.chirag() // it will work
 
 //when i use array for it 
 // myHeros.chirag();
 myHeros.heyChirag()
+myHeros.newWord()
