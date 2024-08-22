@@ -37,5 +37,15 @@ Array.prototype.heyChirag = function(){
 
 //when i use array for it 
 // myHeros.chirag();
-myHeros.heyChirag()
-myHeros.newWord()
+// myHeros.heyChirag()
+// myHeros.newWord()
+
+
+// function curryfn(a){
+//     return function(b){
+//         const mult = a*b; //6
+//         return function(c){
+//             return res = mult*c;
+//         }
+//     }
+// }
