@@ -21,8 +21,9 @@ Array.prototype.heyChirag = function(){
     
 }
 
-// String.prototype.newWord = function(){
-//     console.log(`New String `);
+String.prototype.newWord = function(){
+    console.log(`New String `);
+}
     
 // }
 //It won't for strings like this because Strings in js are primitive values 
@@ -49,3 +50,45 @@ Array.prototype.heyChirag = function(){
 //         }
 //     }
 // }
+
+
+//inheritance
+
+const user = {
+    name:"Chai",
+    email:"chirag@goole.com"
+}
+
+const teacher = {
+    makeVideo :true
+}
+
+const teachingSupport ={
+    isAvailable : false
+}
+
+const TASupport = {
+    makeAssignment : 'JS Assignment',
+    fullTime : true,
+    __proto__: teachingSupport  //keyword used to inherit
+    // It is a way to access or set the prototype of an object,
+    //  which is the object that it inherits methods and properties from
+}
+
+teacher.__proto__ = user
+console.log(teacher.name);
+
+
+
+//Modern Syntax
+
+Object.setPrototypeOf(teachingSupport,teacher);
+
+let anotherUser = "ChaiAurCode   ";
+String.prototype.trueLength = function(){   //trueLength is a method i created over here
+    console.log(`${this}`); //chaiAurCode
+    console.log(`True length is :${this.trim().length}`);
+}
+
+anotherUser.trueLength();
+// "chirag".trueLength();
