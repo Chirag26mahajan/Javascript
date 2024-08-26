@@ -83,7 +83,6 @@ console.log(teacher.name);
 //Modern Syntax
 
 Object.setPrototypeOf(teachingSupport,teacher);
-
 let anotherUser = "ChaiAurCode   ";
 String.prototype.trueLength = function(){   //trueLength is a method i created over here
     console.log(`${this}`); //chaiAurCode
