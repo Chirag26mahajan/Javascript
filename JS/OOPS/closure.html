@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    
+</body>
+<script>
+    function outer(){
+        let username = "Chirag"
+        function inner(){
+            let secret = 123;
+            console.log("inner",username)
+        }
+
+        function innerTwo(){
+            console.log("InnerTwo",username);
+            
+            console.log("InnerTwo",secret); //ye nahi ayega 
+        }
+        inner()
+    }
+    outer()
+
+</script>
+
+<script>
+// document.getElementById("orange").addEventListener('click',function(){
+//     document.body.style.backgroundColor =`orange`
+// })
+
+// document.getElementById("green").addEventListener('click',function(){
+//     document.body.style.backgroundColor =`green`
+// })
+
+function clickHandler(color){
+         //It wont work like this
+    // document.body.style.backgroundColor =`${color}`
+    return function(){
+        document.body.style.backgroundColor = `${color}`
+        //idhar when i return the func uska pura lexical scope ke sath return kar jata hai
+    }
+}
+
+document.getElementById('orange').onclick = clickHandler("orange")
+document.getElementById('green').onclick = clickHandler("green")
+
+</script>
+</html>
