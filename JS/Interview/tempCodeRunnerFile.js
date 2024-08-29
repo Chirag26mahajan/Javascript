@@ -1,8 +1,2 @@
-var x =20
-
-function foo(){
-    console.log(x);
-    var x = 10;
-}
-
-foo()
+console.log(name)
+let name = "John"

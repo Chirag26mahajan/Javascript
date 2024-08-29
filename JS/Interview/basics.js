@@ -57,10 +57,10 @@ function foo(){
 
 //Ques
 // console.log(name)  //name is keyword and global variabe in browser scope 
-var name = "John" //in global scope it is always present as empty string
+// var name = "John" //in global scope it is always present as empty string
 
-// console.log(name)
-// let name = "John"
+console.log(name)
+ var name = "John"
 
 
 
@@ -116,4 +116,27 @@ async function main(){
 // })
 
 
-a
+
+
+//Ques methods vs fucnction
+
+const user = {
+    add:function (a,b){
+        return a+b;
+    },
+
+    subtract : function(a,b){
+        return a-b;
+    },
+
+    multiply: function(a,b){
+        return a*b;
+    },
+
+    divide(a,b){ //better method
+        return a/b
+    }
+}
+
+console.log(user.subtract(8,1));
+
