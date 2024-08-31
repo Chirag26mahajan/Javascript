@@ -140,3 +140,38 @@ const user = {
 
 console.log(user.subtract(8,1));
 
+
+
+const number = [1,2,3]
+number[10] =11
+// console.log(number); 
+//since js is user friendly it handles the error itself and return 
+// [ 1, 2, 3, <7 empty items>, 11 ]
+
+
+
+//Ques if i dont pass anything in check it should give me an error 
+function check(){
+   throw new Error("Param Required");   
+}
+
+function show(name =check()){
+    console.log(name);
+}
+
+// show("chirag"); //no error
+// show(); //will throw an error
+
+
+var name = 2024;
+console.log(name+1);  //name is reserved keyword and when we are working in global scope it converts it into string
+//output - 20241
+
+
+for(var i=0;i<3;i++){
+    setTimeout(()=>{
+        console.log(i);
+    })
+}
+//output will be 3 3 3 because we are using var a function scope
+//so it creates a single i for every iteration i.e 3 but i we use let  output will be 1 2 3 
