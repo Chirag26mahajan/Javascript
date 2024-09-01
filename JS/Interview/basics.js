@@ -138,7 +138,7 @@ const user = {
     }
 }
 
-console.log(user.subtract(8,1));
+// console.log(user.subtract(8,1));
 
 
 
@@ -164,14 +164,41 @@ function show(name =check()){
 
 
 var name = 2024;
-console.log(name+1);  //name is reserved keyword and when we are working in global scope it converts it into string
+// console.log(name+1);  //name is reserved keyword and when we are working in global scope it converts it into string
 //output - 20241
 
 
 for(var i=0;i<3;i++){
     setTimeout(()=>{
-        console.log(i);
+        // console.log(i);
     })
 }
 //output will be 3 3 3 because we are using var a function scope
 //so it creates a single i for every iteration i.e 3 but i we use let  output will be 1 2 3 
+
+
+//Ques
+
+console.log(null==undefined);   //since both are falsy values
+console.log(null===undefined);  //checks datatypes as well null is object
+console.log(30+undefined);  //undefined converted into NaN
+console.log(30+null); //here null is converted to 0 
+console.log(null+undefined);
+
+//true
+// false
+// NaN
+// 30
+// NaN
+
+
+//Ques Negative Infinity 
+let result1 = -1 / 0;
+console.log(result1); // Output: -Infinity
+
+
+const arr1 = [1,9,3,4,5,6]
+console.log(arr1.at(2));
+ //starts with 0 index
+
+
