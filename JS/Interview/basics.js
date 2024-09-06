@@ -202,3 +202,10 @@ console.log(arr1.at(2));
  //starts with 0 index
 
 
+//Ques Spotify 
+function fetch(){
+    A  = 7;
+    console.log(A);
+}
+let A;
+fetch(); //output will be 7
