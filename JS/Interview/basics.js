@@ -209,3 +209,7 @@ function fetch(){
 }
 let A;
 fetch(); //output will be 7
+
+
+console.log(false==[]); //true  false==""   0==0
+console.log(false ==![]); //true
