@@ -8,5 +8,5 @@ for(let x of str){
         obj[x] = 1;
     }
 }
-
+// 
 console.log(obj)

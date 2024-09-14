@@ -213,3 +213,20 @@ fetch(); //output will be 7
 
 console.log(false==[]); //true  false==""   0==0
 console.log(false ==![]); //true
+
+
+//Ques 
+function containsOnlyNumbers(str) {
+    const regex = /^\d+$/;
+    return regex.test(str);
+}
+
+//const regex = /^[A-Za-z]+$/;
+// const regex = /^[^\w\s]+$/;
+// \w matches any alphanumeric character (letters and digits) and underscores.
+// \s matches any whitespace character (spaces, tabs, line breaks).
+
+console.log(containsOnlyNumbers("123456")); // true
+console.log(containsOnlyNumbers("123abc")); // false
+console.log(containsOnlyNumbers("1234.56")); // false
+console.log(containsOnlyNumbers("")); 
