@@ -226,7 +226,13 @@ function containsOnlyNumbers(str) {
 // \w matches any alphanumeric character (letters and digits) and underscores.
 // \s matches any whitespace character (spaces, tabs, line breaks).
 
-console.log(containsOnlyNumbers("123456")); // true
-console.log(containsOnlyNumbers("123abc")); // false
-console.log(containsOnlyNumbers("1234.56")); // false
-console.log(containsOnlyNumbers("")); 
+// console.log(containsOnlyNumbers("123456")); // true
+// console.log(containsOnlyNumbers("123abc")); // false
+// console.log(containsOnlyNumbers("1234.56")); // false
+// console.log(containsOnlyNumbers("")); 
+
+
+//Ques Duplicates
+const arrNum = [1,2,8,2,9,8];
+const duplicate = arrNum.filter((ele,index,arr)=>arr.indexOf(ele)!==index);
+console.log(duplicate);
