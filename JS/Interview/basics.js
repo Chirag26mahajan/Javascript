@@ -236,3 +236,16 @@ function containsOnlyNumbers(str) {
 const arrNum = [1,2,8,2,9,8];
 const duplicate = arrNum.filter((ele,index,arr)=>arr.indexOf(ele)!==index);
 console.log(duplicate);
+
+
+//Ques How to find second largest in array
+const isArray = [2,7,9,8];
+const largestValue = (arr)=>{
+    firstLargestValue = Math.max(...arr);
+    index =arr.indexOf(firstLargestValue);
+    arr.splice(index,1)
+    secondLargestValue  = Math.max(...arr);
+
+    return(secondLargestValue)
+}
+console.log(largestValue(isArray));
