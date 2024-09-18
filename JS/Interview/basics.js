@@ -264,3 +264,19 @@ try{
 console.log(x); //undefined
 console.log(y); //2
 })();
+
+//IIFE Immediately Invoked Function Expression
+//Create priavte scope
+//Avoid Polluting global scope
+(()=>{
+//Synatx
+})();
+
+(function(){
+    let str = "CHirag";
+    console.log(str);
+    
+})();
+// console.log(str);  will show an error that str is not defined refernceError
+
+
